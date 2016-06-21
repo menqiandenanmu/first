@@ -4,8 +4,8 @@
 
   <groupId>com.nanmu.onlineRetailers</groupId>
   <artifactId>nanmu</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
+	<version>1.0.0</version>
 
   <name>nanmu</name>
   <url>http://maven.apache.org</url>
@@ -15,16 +15,15 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-		<groupId>org.apache.ibatis</groupId>
-		<artifactId>ibatis-sqlmap</artifactId>
-		<version>2.3.4.726</version>
-	</dependency>
   </dependencies>
+  
+  <modules>
+		<module>biz/nanmu-biz</module>
+		<!--  <module>biz/authoritymanager-facade</module>
+		<module>dal/authoritymanager-dal</module>
+		<module>web/authoritymanager-web</module>
+		<module>model/authoritymanager-model</module>
+		<module>tools/authoritymanager-common</module>
+		<module>tools/authoritymanager-deploy</module>-->
+	</modules>
 </project>
